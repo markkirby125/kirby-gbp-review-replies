@@ -84,7 +84,7 @@ For "Nothing public" cases, output only the header, the flag and the escalation 
 3. Rejected replies may not trigger a notification (one secondary source; unverified). Silence is not proof the reply went live.
 4. Complete the ledger row recorded at approval ([module 3 section 3.3](./module_3_lint_and_anti_repetition.md)): set `live` to the date verified, or `not shown`. If the posted text differs from the approved text, re-lint it and update the row.
 5. Hand off to [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) [Module 14 section 14.2](../../kirby-seo-telemetry/references/module_14_gbp_enforcement_status_and_reply_quarantine_telemetry.md), whose probe flags a quarantined reply where an authenticated reply has no public counterpart (field names unverified here).
-6. When telemetry flags a quarantined reply, re-draft it through this skill. Section 14.2 routes to the `kirby-local-seo` Module 10 script, which is superseded for drafting ([module 4 section 4.5](./module_4_hard_cases_and_compliance.md)).
+6. When telemetry flags a quarantined reply, re-draft it through this skill. `kirby-seo-telemetry` section 14.2 now routes quarantined replies to this skill (`501b622`, root pointer `3955b8b`); the `kirby-local-seo` Module 10 script is an example of the required elements, not text to copy ([module 4 section 4.5](./module_4_hard_cases_and_compliance.md)).
 
 ## 5.7 Reply-timing targets (default, tunable)
 
