@@ -10,7 +10,7 @@ Drafts replies to Google Business Profile (GBP) reviews for the owner to choose,
 4. **First name only**, never a surname, and no name when the handle reads as a surname ([module 1 section 1.3](./module_1_star_playbooks.md)).
 5. **Never accuse a reviewer of faking** (lint item 6).
 6. **GBP only, English only for v1.** Other platforms are parked in [`../FUTURE_PLATFORMS.md`](../FUTURE_PLATFORMS.md); a non-English review is passed back undrafted.
-7. **`kirby-local-seo` is linked, not edited.** Where its older guidance differs, this skill governs reply drafting ([module 4 section 4.5](./module_4_hard_cases_and_compliance.md)).
+7. **`kirby-local-seo` is linked, not edited by this skill.** Its review-reply conflicts with this skill were fixed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`); where the two still differ, this skill governs reply drafting ([module 4 section 4.5](./module_4_hard_cases_and_compliance.md)).
 
 ## Inputs and outputs
 

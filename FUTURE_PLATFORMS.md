@@ -41,4 +41,4 @@ v1 drafts replies for Google Business Profile only. This file records what a v2 
 | Whether Google notifies reviewers of owner replies and lets them change their review (secondary report) | Unverified; v1 hedges it in the module 4 reviewer-edit row |
 | Whether owners are notified when a reply is rejected | Unverified; v1 tells owners to check the reply is live |
 | Multilingual replies (non-English reviews): parked for a later version; would need per-language banned lists, register rules and native-speaker review | Unverified |
-| Contradictions with `kirby-local-seo` modules 3, 8 and 10 | Tracked in [references/module_4_hard_cases_and_compliance.md](references/module_4_hard_cases_and_compliance.md) section 4.5; fix is a separate task |
+| Contradictions with `kirby-local-seo` modules 3, 8 and 10 | Fixed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`); each conflict and decision is recorded in [references/module_4_hard_cases_and_compliance.md](references/module_4_hard_cases_and_compliance.md) section 4.5 |

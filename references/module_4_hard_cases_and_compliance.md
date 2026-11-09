@@ -36,7 +36,7 @@ Example restricted draft (suspected fake, non-regulated sector, owner confirmed 
 | One-ticket, single-dossier support escalation (section 12.4) | [`kirby-local-seo` Module 12](../../kirby-local-seo/references/module_12_continuous_take_video_verification_and_sab_support.md) |
 | Review gating and the FTC Rule on Consumer Reviews (section 3.16) | [`kirby-local-seo` Module 3 section 3.16](../../kirby-local-seo/references/module_3_local_ai_search_review_engineering_google_ask_maps.md) |
 
-Do not use the reply scripts in `kirby-local-seo` Module 10 section 10.1 or [Module 8](../../kirby-local-seo/references/module_8_sab_invisible_address_domination_and_entity_mirroring.md) section 8.1, or the AI auto-replies to 4-5 star reviews in Module 3 section 3.1.1 C (see 4.5). Module 3 is linked for sections 3.14 and 3.16 only.
+Treat the reply script in `kirby-local-seo` Module 10 section 10.1 as an example of the required elements, not as text to copy; [Module 8](../../kirby-local-seo/references/module_8_sab_invisible_address_domination_and_entity_mirroring.md) section 8.1 now points to it (see 4.5). Module 3 is linked for sections 3.14 and 3.16 only.
 
 ## 4.3 Compliance
 
@@ -79,13 +79,13 @@ Lint item 6 is the rule. A false accusation in a public reply can expose the own
 
 ## 4.5 Contradictions resolved
 
-`kirby-local-seo` contains guidance that conflicts with this skill. A separate task will reconcile it; until then, this skill governs reply drafting.
+`kirby-local-seo` held guidance that conflicted with this skill. It was fixed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`); the table records each conflict and the decision this skill takes. Where the two still differ, this skill governs reply drafting.
 
 | # | Contradiction in kirby-local-seo | Decision this skill takes |
 |---|---|---|
 | 1 | Module 3 section 3.1.1 C auto-replies to 4-5 star reviews with an AI agent; Module 6 section 6.6 requires a human gate; fixed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`) | Human gate always; no auto-publishing at any star rating |
 | 2 | Module 3 section 3.1.1 C addresses the customer "by name"; Module 10 section 10.1 bans surnames not on the handle; fixed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`) | First name only, never a surname ([Module 1](./module_1_star_playbooks.md) section 1.3) |
 | 3 | Module 3 section 3.1.1 C reinforces service and location tokens in replies; fixed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`) | At most one natural mention, only if the reviewer raised it; replies are not a ranking lever |
-| 4 | Module 8 section 8.1 (pillar 2, "The Negative Review Conversion Script") and Module 10 section 10.1 ("Mandatory Apologetic Conversion Script", which uses the banned "We take ... seriously") give verbatim negative-review scripts; fixed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`), where Module 10 is now the single structure-not-wording reference | Required elements, not text ([Module 1](./module_1_star_playbooks.md) section 1.1); an accountability line is not a liability admission (lint item 4) |
-| 5 | The same scripts put a direct phone number in the reply | Phone numbers off by default; a number needs `phone_opt_in` ([Module 1](./module_1_star_playbooks.md) section 1.4) |
+| 4 | Module 8 section 8.1 (pillar 2, "The Negative Review Conversion Script") and Module 10 section 10.1 ("Mandatory Apologetic Conversion Script", which uses the banned "We take ... seriously") give verbatim negative-review scripts; reframed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`): Module 10 is now the single reference and its script is an example of the structure, not required text (the example still contains the banned "We take ... seriously" wording) | Required elements, not text ([Module 1](./module_1_star_playbooks.md) section 1.1); an accountability line is not a liability admission (lint item 4) |
+| 5 | The same scripts put a direct phone number in the reply; fixed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`), which now uses one `[Listed Phone Number]` placeholder, on owner opt-in only | Phone numbers off by default; a number needs `phone_opt_in` ([Module 1](./module_1_star_playbooks.md) section 1.4) |
 | 6 | [Module 6 section 6.6](../../kirby-local-seo/references/module_6_gbp_loop_practitioner_profiles_profile_guard.md) requires a public response to every review | A reply is drafted for every review except the "Nothing public" cases (4.1), where the owner decides after being told why |
