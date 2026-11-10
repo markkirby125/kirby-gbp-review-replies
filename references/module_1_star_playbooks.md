@@ -72,7 +72,7 @@ The general problem they raised ("the wait for a table") is not an echo: restate
 
 ## 1.4 Content restraints
 
-- **Keyword restraint:** at most ONE natural mention of the service or town, and only if the reviewer raised it first (exception: matrix row 4, both star branches; its statement stays in general terms, never a record or relationship). No SEO phrasing.
+- **Keyword restraint:** at most ONE natural mention of the service or town, and only if the reviewer raised it first (exception: matrix row 4, both star branches; its statement stays in general terms, never a record or relationship). No SEO phrasing. The owner's services and locations lists ([Module 5](./module_5_batch_workflow_and_post_publish.md) section 5.1) are for validating claims only; being on a list never permits a mention.
 - **No upsell, no promotion:** no offers, discounts, links or invitations to book.
 - **No invented remedy:** offer a refund, redo, callback or other fix only if the owner authorised it for this review. No invented timelines, apology details or causes, and no admission of liability (lint item 4).
 - **`[NEED: ...]`:** where a fact is missing, write `[NEED: what the owner must supply]` instead of inventing it. A draft with an unfilled placeholder is not ready to post.

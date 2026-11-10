@@ -17,7 +17,7 @@ Drafts replies to Google Business Profile (GBP) reviews for the owner to choose,
 | Inputs (per review) | Required |
 |---|---|
 | Review text (may be empty), star rating (an entry without one is handed back undrafted, [module 1 section 1.1](./module_1_star_playbooks.md)), reviewer display name, existing owner reply (yes/no) | Yes |
-| `voice_dna.yaml`, business sector, owner-authorised remedies, `phone_opt_in` (default false), last N published replies, tone flag, locale (UK/US), `problem_status` (open / resolved / unknown; used by matrix row 9) | Optional |
+| `voice_dna.yaml`, business sector, business context (GBP link or business name and town, services offered, locations covered; used only to validate the reviewer's claims, [module 5 section 5.1](./module_5_batch_workflow_and_post_publish.md)), owner-authorised remedies, `phone_opt_in` (default false), last N published replies, tone flag, locale (UK/US), `problem_status` (open / resolved / unknown; used by matrix row 9) | Optional |
 
 `problem_status` defaults to `unknown`, which counts as open; the draft notes then say "Problem status unknown; treated as open."
 
@@ -46,10 +46,11 @@ Outputs per review: the variants the case-matrix row sets, each with a "why this
 6. Return the variants, notes, lint reports and the go-live reminder.
 
 **Per batch**
-1. Load the last N published replies (default 20) into the ledger.
-2. Order the queue, negatives first (module 5 section 5.2).
-3. Run the per-review steps, checking openers and sign-offs against the ledger.
-4. After the owner posts, check each reply is live, complete its ledger row and hand off to telemetry (module 5 section 5.6).
+1. Collect the business context once (module 5 section 5.1), or note it as not supplied.
+2. Load the last N published replies (default 20) into the ledger.
+3. Order the queue, negatives first (module 5 section 5.2).
+4. Run the per-review steps, checking openers and sign-offs against the ledger.
+5. After the owner posts, check each reply is live, complete its ledger row and hand off to telemetry (module 5 section 5.6).
 
 ## When not to use this skill
 
