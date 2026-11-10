@@ -46,7 +46,7 @@ Outputs per review: the variants the case-matrix row sets, each with a "why this
 6. Return the variants, notes, lint reports and the go-live reminder.
 
 **Per batch**
-1. Collect the business context once (module 5 section 5.1), or note it as not supplied.
+1. Collect the business context once per location (module 5 section 5.1), or note it as not supplied.
 2. Load the last N published replies (default 20) into the ledger.
 3. Order the queue, negatives first (module 5 section 5.2).
 4. Run the per-review steps, checking openers and sign-offs against the ledger.
