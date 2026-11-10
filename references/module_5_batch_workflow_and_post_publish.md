@@ -7,7 +7,7 @@ Runs a queue of reviews from intake to a verified live reply. Drafting rules liv
 **Primary source:** the OpenSEO MCP tool `get_business_reviews` (OpenSEO `local-seo` skill; external, unverified here), documented as returning reviews with ratings and text.
 
 - The call is queued. A `processing` response returns a `taskId`; call again with it after 30-60 seconds. The re-call is expected not to charge again (unverified; check the credit balance after the first run). Do not start a second fresh request while one is processing.
-- Field names (e.g. `rating`, `text`, `ownerReplied`), whether the owner replied, the display name and the review date are unverified. Read the actual response and map it to the dispatcher inputs. If "owner replied" is absent, ask the owner; if the display name is absent, mark `[NEED: reviewer first name]`; if absent, start with the reply itself; record "anonymous" in the ledger ([module 1 section 1.3](./module_1_star_playbooks.md) rule 4).
+- Field names (e.g. `rating`, `text`, `ownerReplied`), whether the owner replied, the display name and the review date are unverified. Read the actual response and map it to the dispatcher inputs. If "owner replied" is absent, ask the owner; if the display name is absent, start with the reply itself and record "anonymous" in the ledger ([module 1 section 1.3](./module_1_star_playbooks.md) rule 4).
 - The display name is an input only. Outputs, the ledger and the telemetry handoff carry the first name per [module 1 section 1.3](./module_1_star_playbooks.md), or "anonymous" (a record value only; it never appears in a reply, per section 1.3 rule 4).
 - OpenSEO research uses credits. State the expected cost before pulling reviews for many locations.
 
