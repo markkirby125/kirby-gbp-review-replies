@@ -7,7 +7,7 @@ Drafts replies to Google Business Profile (GBP) reviews for the owner to choose,
 1. **Human-approved only.** The skill never auto-publishes. Every output is a draft.
 2. **Every review gets a reply decision**, text or star-only. A draft is produced for all except the module 4 "Nothing public" cases (legal threat, ex-employee, harassment or hate, non-English, and wrong business until the owner confirms it); for those the owner is told why and decides.
 3. **Phone numbers off by default.** The route is "Please contact us via the details on our profile." (sole trader: "Please contact me via the details on my profile."). A number appears only under `phone_opt_in` ([module 1 section 1.4](./module_1_star_playbooks.md)).
-4. **First name only**, never a surname, and no name when the handle reads as a surname ([module 1 section 1.3](./module_1_star_playbooks.md)).
+4. **First name only**, never a surname, and no name when the handle reads as a surname, and none at all in a regulated sector (lint items 2 and 5; [module 1 section 1.3](./module_1_star_playbooks.md)).
 5. **Never accuse a reviewer of faking** (lint item 6).
 6. **GBP only, English only for v1.** Other platforms are parked in [`../FUTURE_PLATFORMS.md`](../FUTURE_PLATFORMS.md); a non-English review is passed back undrafted.
 7. **`kirby-local-seo` is linked, not edited by this skill.** Its review-reply conflicts with this skill were fixed in `kirby-local-seo` (`755bab9`, root pointer `d083f68`); where the two still differ, this skill governs reply drafting ([module 4 section 4.5](./module_4_hard_cases_and_compliance.md)).
