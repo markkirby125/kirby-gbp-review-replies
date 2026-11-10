@@ -67,7 +67,7 @@ The general problem they raised ("the wait for a table") is not an echo: restate
 1. First name only, from the reviewer's Google handle, and only where it reads naturally.
 2. Never a surname, even if the handle shows one.
 3. No name when the handle's only token reads as a surname or the name order is ambiguous ("Patel", "Patel, Sam", "Nguyen Van An").
-4. No name for initials, "A Google User" or an anonymous handle (a business name, a nickname). Start with the reply itself. The literal "anonymous" is a record value only (ledger, telemetry handoff) and never appears in a reply.
+4. No name for initials, "A Google User", an anonymous handle (a business name, a nickname) or no display name at all. Start with the reply itself. The literal "anonymous" is a record value only (ledger, telemetry handoff) and never appears in a reply.
 5. Regulated sector: never the reviewer's name (lint items 2 and 5). The sign-off is the owner's initials only.
 
 ## 1.4 Content restraints

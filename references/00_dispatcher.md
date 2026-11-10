@@ -16,7 +16,7 @@ Drafts replies to Google Business Profile (GBP) reviews for the owner to choose,
 
 | Inputs (per review) | Required |
 |---|---|
-| Review text (may be empty), star rating (an entry without one is handed back undrafted, [module 1 section 1.1](./module_1_star_playbooks.md)), reviewer display name, existing owner reply (yes/no) | Yes |
+| Review text (may be empty), star rating (an entry without one is handed back undrafted, [module 1 section 1.1](./module_1_star_playbooks.md)), reviewer display name (absent: record anonymous, [module 1 section 1.3](./module_1_star_playbooks.md) rule 4), existing owner reply (yes/no) | Yes |
 | `voice_dna.yaml`, business sector, business context (GBP link or business name and town, services offered, locations covered; used only to validate the reviewer's claims, [module 5 section 5.1](./module_5_batch_workflow_and_post_publish.md)), owner-authorised remedies, `phone_opt_in` (default false), last N published replies, tone flag, locale (UK/US), `problem_status` (open / resolved / unknown; used by matrix row 9) | Optional |
 
 `problem_status` defaults to `unknown`, which counts as open; the draft notes then say "Problem status unknown; treated as open."
