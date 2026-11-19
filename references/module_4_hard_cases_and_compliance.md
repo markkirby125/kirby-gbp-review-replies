@@ -20,7 +20,7 @@ Notes:
 - When a case triggers, return the flag and the escalation message. For "Nothing public" rows, return no variants.
 - If several cases trigger, apply the strictest row. Regulated-sector limits always apply on top of the other row: a regulated suspected fake gets a services or locations fact, never a record line (matrix row 2).
 - Escalation messages go to the owner and are never published.
-- A photo-only entry with no star rating gets no draft either ([Module 1](./module_1_star_playbooks.md) section 1.1 note).
+- Never convert a review reply into Review or AggregateRating markup on the website (house guardrail).\n- A photo-only entry with no star rating gets no draft either ([Module 1](./module_1_star_playbooks.md) section 1.1 note).
 
 Example restricted draft (suspected fake, non-regulated sector, owner confirmed no record, `phone_opt_in: false`; a real draft must be measured against its own review):
 
